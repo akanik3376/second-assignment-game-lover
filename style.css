@@ -314,7 +314,7 @@ margin: auto;
     grid-template-columns: repeat(5, 1fr);
     width: 80%;
     margin: auto;
-
+    gap: 10px;
 }
 
 
@@ -496,9 +496,14 @@ footer {
         width: 90%;
     }
 
-    games section .games-container {
+    .games-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        place-items: center;
+        width: 300px;
+        /* margin: auto; */
+        gap: 10px;
+        align-items: flex-start;
     }
 
     .game {
@@ -566,4 +571,33 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    .game-content {
+
+        margin-right: 5px;
+        /* display: flex;
+        align-items: center; */
+        padding: 5px;
+    }
+
+    .center-aling {
+        margin-left: 10px;
+        width: 20px;
+    }
+
+    .game-content:noHover {
+        /* border-color: #FF42A5;
+        border: 1px solid #FF42A5;
+        border-radius: 5px;
+        align-items: center;
+        padding: 10px;
+        border-radius: 40px; */
+        pointer-events: none;
+    }
+
+    .video-game-description {
+        width: 300px;
+    }
+
+
 }
