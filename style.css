@@ -159,6 +159,12 @@ margin: auto;
     gap: 10px;
 }
 
+.Rectangle-img-3:hover {
+    border: 3px solid #F948B2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 .video-game {
     width: 220px;
 
@@ -200,7 +206,45 @@ margin: auto;
     /* border: 1px solid #FF42A5; */
 }
 
+.play-video .Rectangle-7::after {
+    /* content: ;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 99%;
+    border-radius: 12px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; */
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 99%;
+    border-radius: 12px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    /* The style for the non-hover state */
+}
 
+
+.Rectangle-7:hover::after {
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.video-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
 
 
 /* game-play section start  */
@@ -263,13 +307,16 @@ margin: auto;
 
 }
 
+
+/* ############ end ******** */
+
 .play-video {
     position: relative;
 }
 
 .video-icon {
     position: absolute;
-
+    font-size: 60px;
     color: red;
     font-size: 20px;
     top: 100px;
@@ -286,9 +333,9 @@ margin: auto;
     right: 60px;
 }
 
-.video-icon .fa-brands :hover {
+.video-icon .fa-brands .watch:hover {
     text-emphasis: victor;
-
+    cursor: pointer;
 }
 
 .play-video .Rectangle-7:hover {
@@ -330,8 +377,12 @@ margin: auto;
 
     margin-right: 1rem;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 20px;
+}
+
+.game-content .alin {
+    align-items: center;
 }
 
 .game-content:hover {
@@ -442,6 +493,7 @@ footer {
     width: 60%;
     margin: auto;
     margin-top: 20px;
+    column-gap: 15px;
 }
 
 .wearning {
@@ -643,5 +695,41 @@ footer {
         flex-direction: column;
     }
 
+    .funny-videos-container {
 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .play-game-contant {
+
+        flex-direction: column;
+        width: 100%;
+        margin: 100px auto;
+
+
+        align-items: center;
+
+    }
+
+    .games-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .banner-container {
+        align-items: center;
+        max-width: 100%;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .nav-link {
+        margin-top: 30px;
+    }
+
+    .nav-link a {
+        margin-top: 15px;
+    }
 }
