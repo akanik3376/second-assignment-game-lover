@@ -270,7 +270,7 @@ margin: auto;
 .video-icon {
     position: absolute;
 
-    color: #F948B2;
+    color: red;
     font-size: 20px;
     top: 100px;
     right: 100px;
@@ -288,6 +288,11 @@ margin: auto;
 
 .video-icon .fa-brands :hover {
     text-emphasis: victor;
+
+}
+
+.play-video .Rectangle-7:hover {
+    color: #534C64;
 }
 
 
@@ -307,14 +312,16 @@ margin: auto;
     display: flex;
 }
 
-
+/* .alin {
+    margin-left: 30px;
+} */
 
 .games-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 80%;
     margin: auto;
-    gap: 10px;
+    row-gap: 1.5rem;
 }
 
 
@@ -324,7 +331,7 @@ margin: auto;
     margin-right: 1rem;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding-left: 20px;
 }
 
 .game-content:hover {
@@ -333,7 +340,9 @@ margin: auto;
     border-radius: 5px;
     align-items: center;
     padding: 10px;
+
     border-radius: 40px;
+    color: #F948B2;
 }
 
 .game-content-taitel {
@@ -344,7 +353,7 @@ margin: auto;
 }
 
 .center-aling {
-    width: 120px;
+    width: 200px;
     margin-left: 3rem;
 }
 
@@ -443,6 +452,14 @@ footer {
     font-weight: 500;
 }
 
+
+
+
+
+
+
+
+
 @media screen and (max-width:576px) {
 
     .nav-container,
@@ -468,8 +485,10 @@ footer {
     .social-media {
         grid-template-columns: repeat(3, 1fr);
         padding: 10px;
-        width: 70%;
-        gap: 10px;
+        width: 50%;
+        margin-right: 70px;
+        row-gap: 20px;
+        column-gap: auto;
 
     }
 
@@ -478,6 +497,7 @@ footer {
         gap: 5px;
         font-size: 16px;
         width: 70%;
+        row-gap: 20px;
     }
 
     .Conditions {
@@ -487,9 +507,10 @@ footer {
     }
 
     .banner-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80%;
         display: block;
+        margin-top: 35px;
     }
 
     .img {
@@ -585,18 +606,41 @@ footer {
         width: 20px;
     }
 
-    .game-content:noHover {
-        /* border-color: #FF42A5;
-        border: 1px solid #FF42A5;
-        border-radius: 5px;
+    .game-content:hover {
+        /* border-color: #2d08b3; */
+        border: 2px solid #F948B2;
+        border-radius: 30px;
         align-items: center;
         padding: 10px;
-        border-radius: 40px; */
         pointer-events: none;
+        color: #F948B2;
     }
 
     .video-game-description {
         width: 300px;
+    }
+
+    .game-taitel {
+        font-size: .5rem;
+    }
+
+
+}
+
+
+/* responcive for tablate */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+
+        justify-content: center;
+    }
+
+    .nav-link {
+        flex-direction: column;
     }
 
 
